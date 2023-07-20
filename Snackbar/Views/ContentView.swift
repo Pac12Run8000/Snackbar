@@ -27,21 +27,24 @@ struct ContentView: View {
                             NavigationLink(destination: DetailView(), isActive: $navigateToDetail) {
                                 EmptyView()
                             }
+                           Spacer()
+                                .frame(height: 20)
+                            Button("Show Snackbar") {
+                                withAnimation {
+                                    showSnackbar = true
+                                }
+                                DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                                    withAnimation {
+                                        showSnackbar = false
+                                    }
+                                }
+                            }
                             Spacer()
                         }
                         .navigationBarTitle("DetailView", displayMode: .inline)
                     }
             
-            Button("Show Snackbar") {
-                withAnimation {
-                    showSnackbar = true
-                }
-                DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-                    withAnimation {
-                        showSnackbar = false
-                    }
-                }
-            }
+            
 
             Spacer()
 
