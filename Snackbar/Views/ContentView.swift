@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @State private var showSnackbar = false
     @State private var navigateToDetail = false
+    @State private var navigateToDetail2 = false
 
     var body: some View {
         VStack {
@@ -18,13 +19,25 @@ struct ContentView: View {
                             Button(action: {
                                 navigateToDetail = true
                             }) {
-                                Text("Go there")
+                                Text("Detail 1")
+                            }
+                            .padding()
+                            .background(Color.blue)
+                            .foregroundColor(.white)
+                            .cornerRadius(10)
+                            Button(action: {
+                                navigateToDetail2 = true
+                            }) {
+                                Text("Detail 2")
                             }
                             .padding()
                             .background(Color.blue)
                             .foregroundColor(.white)
                             .cornerRadius(10)
                             NavigationLink(destination: DetailView(), isActive: $navigateToDetail) {
+                                EmptyView()
+                            }
+                            NavigationLink(destination: DetailTwoView(), isActive: $navigateToDetail2) {
                                 EmptyView()
                             }
                            Spacer()
