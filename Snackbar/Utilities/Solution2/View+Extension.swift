@@ -21,8 +21,8 @@ extension View {
 // for the third solution
 
 extension View {
-    func banner(isPresented: Binding<Bool>, text: String) -> some View {
-        let banner = Banner(text: text)
+    func banner(isPresented: Binding<Bool>) -> some View {
+        let banner = Banner()
         return self.modifier(BannerModifier(isPresented: isPresented, banner: banner))
     }
 }

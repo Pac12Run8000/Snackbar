@@ -18,6 +18,6 @@ struct DetailTwoView: View {
                     Text("Show Banner")
                 }
             }
-            .banner(isPresented: $showBanner, text: "This is a banner")
+            .banner(isPresented: $showBanner)
         }
 }
