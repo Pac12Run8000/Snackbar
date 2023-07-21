@@ -19,9 +19,11 @@ struct BannerModifier: ViewModifier {
             if isPresented {
                 banner
                     .offset(y: bannerPosition)
-                    .animation(.spring())
                     .onAppear {
-                        bannerPosition = 0
+                        withAnimation {
+                            bannerPosition = 0
+                        }
+                        
                         Timer.scheduledTimer(withTimeInterval: 5.0, repeats: false) { _ in
                             withAnimation {
                                 bannerPosition = UIScreen.main.bounds.height
