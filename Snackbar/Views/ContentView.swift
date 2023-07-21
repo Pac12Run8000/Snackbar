@@ -41,10 +41,8 @@ struct ContentView: View {
                             }
                             Spacer()
                         }
-                        .navigationBarTitle("DetailView", displayMode: .inline)
+                        .navigationBarTitle("Home - Example with DispatchQueue", displayMode: .inline)
                     }
-            
-            
 
             Spacer()
 

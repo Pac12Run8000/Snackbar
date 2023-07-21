@@ -57,7 +57,6 @@
 				0917DCD82A69CE640078BFB5 /* SnackbarApp.swift */,
 				0917DCDC2A69CE660078BFB5 /* Assets.xcassets */,
 				0917DCDE2A69CE660078BFB5 /* Preview Content */,
-				0917DCE72A69D2D40078BFB5 /* DetailView.swift */,
 			);
 			path = Snackbar;
 			sourceTree = "<group>";
@@ -73,6 +72,7 @@
 		0917DCE62A69D2B70078BFB5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0917DCE72A69D2D40078BFB5 /* DetailView.swift */,
 				0917DCDA2A69CE640078BFB5 /* ContentView.swift */,
 			);
 			path = Views;
