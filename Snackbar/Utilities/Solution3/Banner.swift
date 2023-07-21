@@ -12,10 +12,10 @@ struct Banner: View {
 
     var body: some View {
         Text(text)
-            .frame(width: UIScreen.main.bounds.width - 40, height: 50)
-                        .background(Color.blue)
-                        .foregroundColor(.white)
-                        .cornerRadius(10)
+            .frame(width: UIScreen.main.bounds.width - 12, height: 100)
+                        .background(Color.white)
+                        .foregroundColor(.black)
+                        .cornerRadius(5)
                         .overlay(
                             RoundedRectangle(cornerRadius: 10)
                                 .stroke(Color.black, lineWidth: 2)
