@@ -24,7 +24,7 @@ struct BannerModifier: ViewModifier {
                             bannerPosition = 0
                         }
                         
-                        Timer.scheduledTimer(withTimeInterval: 5.0, repeats: false) { _ in
+                        Timer.scheduledTimer(withTimeInterval: 7.0, repeats: false) { _ in
                             withAnimation {
                                 bannerPosition = UIScreen.main.bounds.height
                                 self.isPresented = false
