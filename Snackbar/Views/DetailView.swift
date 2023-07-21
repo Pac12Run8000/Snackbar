@@ -8,9 +8,18 @@
 import SwiftUI
 
 struct DetailView: View {
-    var body: some View {
-        VStack {
-            Text("Detail")
+    @State private var isSnackbarPresented = false
+
+        var body: some View {
+            Button("Show Snackbar") {
+                isSnackbarPresented = true
+            }
+            .popup(isPresented: isSnackbarPresented, alignment: .bottom, direction: .bottom) {
+                Text("This is a snackbar")
+                    .frame(width: 200, height: 50)
+                    .background(Color.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
+            }
         }
-    }
 }
