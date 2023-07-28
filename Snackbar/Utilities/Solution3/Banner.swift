@@ -38,4 +38,6 @@ struct Banner: View {
              )
              .padding(.horizontal, 20)
     }
+    
+    
 }
