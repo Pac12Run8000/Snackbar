@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct Banner: View {
-    let text: String = "No viewing the benefits of Advanced Idea Mechanics"
+    let text: String = "Now viewing the benefits of Advanced Idea Mechanics"
 
     var body: some View {
         HStack {
