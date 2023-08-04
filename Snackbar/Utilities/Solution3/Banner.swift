@@ -24,6 +24,7 @@ struct Banner: View {
             }
             VStack {
                 Text(text)
+                    .accessibility(addTraits: .isStaticText)
             }
                  
                     Spacer()
@@ -37,6 +38,8 @@ struct Banner: View {
                      .stroke(Color.black, lineWidth: 2)
              )
              .padding(.horizontal, 20)
+             .accessibilityElement(children: .combine)
+             .accessibilityLabel(text)
     }
     
     
